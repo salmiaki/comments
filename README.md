@@ -15,9 +15,24 @@ Pour l’architecture du micro-service Comments, nous avons trois dossiers :
       
 Le dossier comments-api contient un dossier src regroupant toute la gestion de l’API (Controller, Entity, Listener, Migrations, etc.). 
 Le dossier comments-app contient : 
+
     • un dossier vendor pour les librairies utilisées, 
     • un dossier css pour les feuilles de style,
     • un dossier img pour les images du site,
     • un dossier dist comprenant le fichier index.html ainsi que les fichiers relatifs aux différents articles du blog nommés post-x.html.
+    
 Le dossier comments-client contient :
+
     • le fichier index.js à la racine qui sert dans l’utilisation de Axios.
+         
+    I Avoir le dossier comments contenant les trois livrables puis lancer la commande composer:install sur chaque dossier.
+       
+    II Définir vos identifiants de connexion en créant le fichier .env.local à la racine du dossier comments-api sous ce format : DATABASE_URL=mysql://root:password@127.0.0.1:3306/comments
+       
+    III Créer la base de données avec la commande php bin/console doctrine:database:create puis installer le contenu avec la commande php bin/console doctrine:migrations:migrate
+       
+    IV Lancer la commande php bin/console server:run sur le dossier comments-app puis sur comments-api 
+       
+    V L'application devrait être accessible à l'adresse http://127.0.0.1:8080/ et l'API à cette adresse http://127.0.0.1:8000/
+       
+    VI WampServer doit être opérationnel afin de faire fonctionner correctement le projet. 
