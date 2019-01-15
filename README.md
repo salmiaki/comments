@@ -14,6 +14,7 @@ Pour l’architecture du micro-service Comments, nous avons trois dossiers :
     • comments-app qui contient l’application. 
       
 Le dossier comments-api contient un dossier src regroupant toute la gestion de l’API (Controller, Entity, Listener, Migrations, etc.). 
+
 Le dossier comments-app contient : 
 
     • un dossier vendor pour les librairies utilisées, 
