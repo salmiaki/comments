@@ -24,6 +24,8 @@ Le dossier comments-app contient :
 Le dossier comments-client contient :
 
     • le fichier index.js à la racine qui sert dans l’utilisation de Axios.
+    
+Instructions :
          
     I Avoir le dossier comments contenant les trois livrables puis lancer la commande composer:install sur chaque dossier.
        
